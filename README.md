@@ -1,5 +1,7 @@
 # VSCode Rust Targets
 
+[![badge](https://img.shields.io/visual-studio-marketplace/i/polymeilex.rust-targets?label=vs%20marketplace&style=flat-square)](https://marketplace.visualstudio.com/items?itemName=PolyMeilex.rust-targets)
+
 Super simple extension to change rust target in VS Code without opening `setting.json`
 
 ![img](https://i.imgur.com/4XVZ5ko.png)
