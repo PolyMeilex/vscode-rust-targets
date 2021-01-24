@@ -2,7 +2,7 @@
   "name": "rust-targets",
   "displayName": "Rust Targets",
   "description": "Change rust targets easily",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "PolyMeilex",
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:rust-targets.setRustTarget"
+    "onCommand:rust-targets.setRustTarget",
+    "onLanguage:rust"
   ],
   "main": "./dist/extension.js",
   "contributes": {
