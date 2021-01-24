@@ -5,6 +5,7 @@
 Super simple extension to change rust target in VS Code without opening `setting.json`
 
 ![img](https://i.imgur.com/4XVZ5ko.png)
+![img](https://i.imgur.com/UAszh6C.png)
 
 Written only for personal use, but maybe someone else also needs it, so here it is.
 Enjoy!
