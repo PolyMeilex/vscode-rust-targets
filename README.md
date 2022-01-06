@@ -12,7 +12,7 @@ Enjoy!
 
 # Settings
 
-You can configure target list by adding this to your `seeting.json`
+You can configure target list by adding this to your `settings.json`
 
 Choosing `system` will remove `rust.target` from setting, which in consequence sets your target to your current host system.
 
