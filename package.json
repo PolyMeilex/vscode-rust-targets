@@ -4,6 +4,7 @@
   "description": "Change rust targets easily",
   "version": "1.1.1",
   "publisher": "PolyMeilex",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/PolyMeilex/vscode-rust-targets.git"
