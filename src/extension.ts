@@ -12,7 +12,6 @@ function onTargetUpdate() {
 function forTargets(callback: (t: string) => void) {
   [
     "rust-analyzer.cargo.target",
-    "rust-analyzer.checkOnSave.target",
   ].forEach((t) => callback(t));
 }
 
