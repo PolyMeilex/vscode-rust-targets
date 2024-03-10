@@ -51,7 +51,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (val !== undefined) {
           const target: string | undefined = val === "system" ? undefined : val;
           forTargets((t) => {
-            config.update(t, target, true);
+            config.update(t, target, false);
           });
         }
       });
