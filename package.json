@@ -1,38 +1,29 @@
 {
-  "name": "rust-targets",
-  "displayName": "Rust Targets",
+  "name": "rust-analyzer-target",
+  "displayName": "Rust Change Targets",
   "description": "Change rust targets easily",
-  "version": "1.1.1",
-  "publisher": "PolyMeilex",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MGibson1/vscode-rust-targets.git"
-  },
+  "version": "0.0.1",
   "engines": {
-    "vscode": "^1.52.0"
+    "vscode": "^1.86.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:rust-targets.setRustTarget",
-    "onLanguage:rust"
-  ],
-  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "rust-targets.setRustTarget",
+        "command": "rust-analyzer-targets.setRustTarget",
         "title": "Set Rust Target"
       }
     ],
     "configuration": [
       {
-        "title": "Rust Targets",
+        "title": "Set Rust Target",
         "type": "object",
         "properties": {
-          "rust-targets.targets": {
+          "rust-analyzer-targets.targets": {
             "type": "array",
             "default": [
               "system",
@@ -47,29 +38,22 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run package",
-    "compile": "webpack --config ./build/node-extension.webpack.config.js",
-    "watch": "webpack --watch --config ./build/node-extension.webpack.config.js",
-    "package": "webpack --mode production --devtool hidden-source-map --config ./build/node-extension.webpack.config.js",
-    "test-compile": "tsc -p ./",
-    "test-watch": "tsc -watch -p ./",
-    "pretest": "npm run test-compile && npm run lint",
-    "lint": "eslint src --ext ts"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.52.0",
-    "@types/glob": "^7.1.3",
-    "@types/mocha": "^8.0.4",
-    "@types/node": "^12.11.7",
-    "eslint": "^7.15.0",
-    "@typescript-eslint/eslint-plugin": "^4.9.0",
-    "@typescript-eslint/parser": "^4.9.0",
-    "glob": "^7.1.6",
-    "mocha": "^8.1.3",
-    "typescript": "^4.1.2",
-    "vscode-test": "^1.4.1",
-    "ts-loader": "^8.0.11",
-    "webpack": "^5.10.0",
-    "webpack-cli": "^4.2.0"
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
   }
 }

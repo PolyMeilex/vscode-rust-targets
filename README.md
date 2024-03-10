@@ -1,8 +1,4 @@
-Forked from [PolyMeilex](https://github.com/PolyMeilex/vscode-rust-targets) to:
-- remove rust extension settings, which is deprecated
-- remove deprecated rust-analyzer setting
-- store setting updates to the workspace rather than global
-    - This is to better support immutable configurations
+Forked from [PolyMeilex](https://github.com/PolyMeilex/vscode-rust-targets) to update a few behaviors.
 
 # VSCode Rust Targets
 
@@ -23,7 +19,7 @@ You can configure target list by adding this to your `settings.json`
 Choosing `system` will remove `rust.target` from setting, which in consequence sets your target to your current host system.
 
 ```json
-"rust-targets.targets": [
+"rust-analyzer-targets.targets": [
     "system",
     "x86_64-pc-windows-gnu",
     "x86_64-apple-darwin",
