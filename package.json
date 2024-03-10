@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PolyMeilex/vscode-rust-targets.git"
+    "url": "https://github.com/MGibson1/vscode-rust-targets.git"
   },
   "engines": {
     "vscode": "^1.52.0"
