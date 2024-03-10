@@ -1,3 +1,9 @@
+Forked from [PolyMeilex](https://github.com/PolyMeilex/vscode-rust-targets) to:
+- remove rust extension settings, which is deprecated
+- remove deprecated rust-analyzer setting
+- store setting updates to the workspace rather than global
+    - This is to better support immutable configurations
+
 # VSCode Rust Targets
 
 [![badge](https://img.shields.io/visual-studio-marketplace/i/polymeilex.rust-targets?label=vs%20marketplace&style=flat-square)](https://marketplace.visualstudio.com/items?itemName=PolyMeilex.rust-targets)
