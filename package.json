@@ -2,7 +2,7 @@
   "name": "rust-targets",
   "displayName": "Rust Targets",
   "description": "Change rust targets easily",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "publisher": "PolyMeilex",
   "license": "MIT",
   "repository": {
